@@ -1,472 +1,60 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>FE 2015 | JMLR W&amp;CP</title>
+---
+layout: default
+---
 
-	<!-- Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="../css/jmlr.css" />
+<div id="content" class="home">
 
-	<!-- Fixed position navigation -->
-	<!--#include virtual="/proceedings/css-scroll.txt"-->
+  <h1>Proceedings of Machine Learning Research</h1>
+  <h2>Volume {{ site.volume }}: {{ site.conference.name }}, {{ site.conference.dates.first | date: "%B %-d" }} to {{ site.conference.dates.last | date: "%B %-d, %Y" }}, {{ site.conference.location }}</h2>
+  {% if site.github.edit %}
+  <p align="right">[<a href="https://github.com/{{ site.github_username }}/{% if site.github.repository %}{{ site.github.repository }}{% else %}{{ site.baseurl }}{% endif %}/edit/{% if site.github.repository contains 'github.io' %}master{% else %}gh-pages{% endif %}/_config.yml">edit</a>]</p>
+  {% endif %}
 
-	<!-- MathJax -->
-	<script type="text/x-mathjax-config">
-	MathJax.Hub.Config({tex2jax: {inlineMath: [['\\(','\\)']]}});
-</script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+  
+  <p><strong>Editors:
+      {% assign lastone = site.editor | last %}
+      {% for person in site.editor %}
+      {% include listperson.html %}
+      {% endfor %}
+  </strong></p>
+  <p>[<a href="./bibliography.bib">bib</a>][<a href="./citeproc.yaml">citeproc</a>]</p>
+  <div id="sectionnav">
+    {% if site.sections %}
+    <p>Contents:</p>
+    <ul>
+      {% for section in site.sections %}
+      <li><a href="#{{ section.name }}">{{ section.title }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <label for="search-authors">Filter Authors:</label>
+    <input type="search" name="filter-authors" id="search-authors" value />
+    <label for="search-titles">Filter Titles:</label>
+    <input type="search" name="filter-titles" id="search-titles" value />
+  </div>
+  {% if site.sections %}
+  {% for section in site.sections %}
+  <h3 id="{{ section.name }}">{{ section.title }}</h3>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+    {% if section.name == post.section %}
+    {% include listpaper.html %}
+    {% endif %}
+    {% endfor %}
+  </dl>
+  {% endfor %}
+  {% endif %}
+  <dl>
+  {% assign sorted = (site.posts | sort: 'firstpage') %}
+  {% for post in sorted %}
+  {% unless post.section %} 
+  {% include listpaper.html %}
+  {% endunless %}
+  {% endfor %}
 
-
-</head>
-<body>
-
-<div id="fixed">
-<!--#include virtual="/proceedings/nav-bar.txt"-->
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
 </div>
-
-<div id="content">
-	<h1>JMLR Workshop and Conference Proceedings</h1>
-	<h2>Volume 44: Proceedings of The 1st International Workshop on “Feature Extraction: Modern Questions and Challenges”, NIPS</h2>
-
-	<p><strong>Editors: 
-	
-		Dmitry Storcheus,
-	
-		Afshin Rostamizadeh,
-	
-		Sanjiv Kumar,
-	
-		Neil Lawrence
-    </strong>
-	
-	</p>
-
-	
-
-	<div id="sectionnav">
-		<p>Contents:</p>
-		<ul>
-		
-			<li><a href="#default">Accepted Papers</a></li>
-		
-		</ul>
-
-		<label for="search-authors">Filter Authors:</label>
-		<input type="search" name="filter-authors" id="search-authors" value />
-		<label for="search-titles">Filter Titles:</label>
-		<input type="search" name="filter-titles" id="search-titles" value />
-	</div>
-
-	
-	<h3 id="default">Accepted Papers</h3>
-
-	<dl>
-		
-			<div class="paper">
-	<p class="title">A Survey of Modern Questions and Challenges in Feature Extraction</p>
-	<p class="details">
-	<span class="authors">
-		
-			Dmitry Storcheus,
-		
-			Afshin Rostamizadeh,
-		
-			Sanjiv Kumar
-	</span>
-	</p>
-	<p class="links">
-		[<a href="storcheus2015survey.html">abs</a>]
-		[<a href="storcheus2015survey.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">A Dimension-Independent Generalization Bound for Kernel Supervised Principal Component Analysis</p>
-	<p class="details">
-	<span class="authors">
-		
-			Hassan Ashtiani,
-		
-			Ali Ghodsi
-	</span>
-	</p>
-	<p class="links">
-		[<a href="Ashtiani2015.html">abs</a>]
-		[<a href="Ashtiani2015.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Learning Sparse Metrics, One Feature at a Time</p>
-	<p class="details">
-	<span class="authors">
-		
-			Yuval, Atzmon,
-		
-			Uri Shalit,
-		
-			Gal Chechik
-	</span>
-	</p>
-	<p class="links">
-		[<a href="atzmon2015.html">abs</a>]
-		[<a href="atzmon2015.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Stage-wise Training: An Improved Feature Learning Strategy for Deep Models</p>
-	<p class="details">
-	<span class="authors">
-		
-			Elnaz Barshan,
-		
-			Paul Fieguth
-	</span>
-	</p>
-	<p class="links">
-		[<a href="Barshan2015.html">abs</a>]
-		[<a href="Barshan2015.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Learning Multi-channel Deep Feature Representations for Face Recognition</p>
-	<p class="details">
-	<span class="authors">
-		
-			Xue-wen Chen,
-		
-			Melih Aslan,
-		
-			Kunlei Zhang,
-		
-			Thomas Huang
-	</span>
-	</p>
-	<p class="links">
-		[<a href="chen15learning.html">abs</a>]
-		[<a href="chen15learning.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Kernel Extraction via Voted Risk Minimization</p>
-	<p class="details">
-	<span class="authors">
-		
-			Corinna Cortes,
-		
-			Prasoon Goyal,
-		
-			Vitaly Kuznetsov,
-		
-			Mehryar Mohri
-	</span>
-	</p>
-	<p class="links">
-		[<a href="cortes15a.html">abs</a>]
-		[<a href="cortes15a.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">A Computationally Efficient Method for Estimating Semi Parametric Regression Functions</p>
-	<p class="details">
-	<span class="authors">
-		
-			Xia Cui,
-		
-			Ying Lu,
-		
-			Heng Peng
-	</span>
-	</p>
-	<p class="links">
-		[<a href="CuiLuPeng15.html">abs</a>]
-		[<a href="CuiLuPeng15.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Spatiotemporal Feature Extraction with Data-Driven Koopman Operators</p>
-	<p class="details">
-	<span class="authors">
-		
-			Dimitrios Giannakis,
-		
-			Joanna Slawinska,
-		
-			Zhizhen Zhao
-	</span>
-	</p>
-	<p class="links">
-		[<a href="giannakis15.html">abs</a>]
-		[<a href="giannakis15.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Convolutional Dictionary Learning through Tensor Factorization</p>
-	<p class="details">
-	<span class="authors">
-		
-			Furong Huang,
-		
-			Animashree Anandkumar
-	</span>
-	</p>
-	<p class="links">
-		[<a href="huang15convolutional.html">abs</a>]
-		[<a href="huang15convolutional.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title"><span>FEAST at Play: Feature ExtrAction using Score function Tensors</span></p>
-	<p class="details">
-	<span class="authors">
-		
-			Majid Janzamin,
-		
-			Hanie Sedghi,
-		
-			U.N. Niranjan,
-		
-			Animashree Anandkumar
-	</span>
-	</p>
-	<p class="links">
-		[<a href="janzamin2015.html">abs</a>]
-		[<a href="janzamin2015.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">The Deep Feed-Forward Gaussian Process: An Effective Generalization to Covariance Priors</p>
-	<p class="details">
-	<span class="authors">
-		
-			Melih Kandemir,
-		
-			Fred A. Hamprecht
-	</span>
-	</p>
-	<p class="links">
-		[<a href="kandemir15jmlr.html">abs</a>]
-		[<a href="kandemir15jmlr.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Deep Clustered Convolutional Kernels</p>
-	<p class="details">
-	<span class="authors">
-		
-			Minyoung Kim,
-		
-			Luca Rigazio
-	</span>
-	</p>
-	<p class="links">
-		[<a href="kim2015a.html">abs</a>]
-		[<a href="kim2015a.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Theory and Algorithms for the Localized Setting of Learning Kernels</p>
-	<p class="details">
-	<span class="authors">
-		
-			Yunwen Lei,
-		
-			Alexander Binder,
-		
-			Ürün Dogan,
-		
-			Marius Kloft
-	</span>
-	</p>
-	<p class="links">
-		[<a href="LeiBinDogKlo15.html">abs</a>]
-		[<a href="LeiBinDogKlo15.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Convergent Learning: Do different neural networks learn the same representations?</p>
-	<p class="details">
-	<span class="authors">
-		
-			Yixuan Li,
-		
-			Jason Yosinski,
-		
-			Jeff Clune,
-		
-			Hod Lipson,
-		
-			John Hopcroft
-	</span>
-	</p>
-	<p class="links">
-		[<a href="li15convergent.html">abs</a>]
-		[<a href="li15convergent.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Hierarchical Feature Extraction for Efficient Design of Microfluidic Flow Patterns</p>
-	<p class="details">
-	<span class="authors">
-		
-			Kin Gwn Lore,
-		
-			Daniel Stoecklein,
-		
-			Michael Davies,
-		
-			Baskar Ganapathysubramanian,
-		
-			Soumik Sarkar
-	</span>
-	</p>
-	<p class="links">
-		[<a href="lore15.html">abs</a>]
-		[<a href="lore15.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Generalization Bounds for Supervised Dimensionality Reduction</p>
-	<p class="details">
-	<span class="authors">
-		
-			Mehryar Mohri,
-		
-			Afshin Rostamizadeh,
-		
-			Dmitry Storcheus
-	</span>
-	</p>
-	<p class="links">
-		[<a href="mohri2015generalization.html">abs</a>]
-		[<a href="mohri2015generalization.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Modular Autoencoders for Ensemble Feature Extraction</p>
-	<p class="details">
-	<span class="authors">
-		
-			Henry Reeve,
-		
-			Gavin Brown
-	</span>
-	</p>
-	<p class="links">
-		[<a href="reeve15a.html">abs</a>]
-		[<a href="reeve15a.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Minimum description length (<span>MDL</span>) regularization for online learning</p>
-	<p class="details">
-	<span class="authors">
-		
-			Gil I. Shamir
-	</span>
-	</p>
-	<p class="links">
-		[<a href="shamir15.html">abs</a>]
-		[<a href="shamir15.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-			<div class="paper">
-	<p class="title">Covariance Selection in the Linear Mixed Effect Mode</p>
-	<p class="details">
-	<span class="authors">
-		
-			Jonathan P. Williams,
-		
-			Ying Lu
-	</span>
-	</p>
-	<p class="links">
-		[<a href="Williams2015.html">abs</a>]
-		[<a href="Williams2015.pdf">pdf</a>]
-		
-		
-	</p>
-</div>
-
-		
-	</dl>
-	
-
-</div> <!-- content -->
-	<!-- Search Widget -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	<script src="../js/search.js"></script>
-</body>
-</html>
+<!-- Search Widget -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="../js/search.js"></script>

@@ -1,0 +1,47 @@
+---
+booktitle: 'Proceedings of the 1st International Workshop on Feature Extraction: Modern
+  Questions and Challenges at NIPS 2015'
+start: 2015-12-11
+end: 2015-12-11
+published: 2015-12-08
+volume: 44
+year: '2015'
+shortname: FE
+layout: proceedings
+series: Proceedings of Machine Learning Research
+id: FE-2015
+month: 0
+abstract: ''
+sections: 
+editor:
+- given: Dmitry
+  family: Storcheus
+- given: Afshin
+  family: Rostamizadeh
+- given: Sanjiv
+  family: Kumar
+title: 'Proceedings of the 1st International Workshop on Feature Extraction: Modern
+  Questions and Challenges at NIPS 2015'
+email: ''
+description: 'Proceedings of the 1st International Workshop on Feature Extraction:
+  Modern Questions and Challenges at NIPS 2015, Montreal, Canada'
+url: http://proceedings.mlr.press
+baseurl: "/v44"
+twitter_username: mlresearch
+github_username: mlresearch
+markdown: kramdown
+permalink: "/:title.html"
+github:
+  edit: true
+  repository: v44
+conference:
+  name: 'Feature Extraction: Modern Questions and Challenges'
+  url: 
+  location: Montreal, Canada
+  dates:
+  - 2015-12-11
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+# Site settings
+# Auto generated from v44.bib
