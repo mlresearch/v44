@@ -52,6 +52,6 @@ issued:
   - 2015
   - 12
   - 8
-pdf: http://proceedings.mlr.press/v44/li15convergent/li15convergent.pdf
+pdf: http://proceedings.mlr.press/v44/li15convergent.pdf
 # Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---

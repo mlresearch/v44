@@ -39,6 +39,6 @@ issued:
   - 2015
   - 12
   - 8
-pdf: http://proceedings.mlr.press/v44/kandemir15jmlr/kandemir15jmlr.pdf
+pdf: http://proceedings.mlr.press/v44/kandemir15jmlr.pdf
 # Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---

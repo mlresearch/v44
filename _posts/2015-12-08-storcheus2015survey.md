@@ -37,6 +37,6 @@ issued:
   - 2015
   - 12
   - 8
-pdf: http://proceedings.mlr.press/v44/storcheus2015survey/storcheus2015survey.pdf
+pdf: http://proceedings.mlr.press/v44/storcheus2015survey.pdf
 # Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---

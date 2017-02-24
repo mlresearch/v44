@@ -41,6 +41,6 @@ issued:
   - 2015
   - 12
   - 8
-pdf: http://proceedings.mlr.press/v44/mohri2015generalization/mohri2015generalization.pdf
+pdf: http://proceedings.mlr.press/v44/mohri2015generalization.pdf
 # Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---
