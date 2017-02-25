@@ -36,6 +36,7 @@ description: |
   Series Editors:
     Neil D. Lawrence
     Mark Reid
+date_str: 11 Dec
 url: http://proceedings.mlr.press
 baseurl: "/v44"
 twitter_username: mlresearch
@@ -45,6 +46,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v44
+bibtex_copy: true
 email: ''
 conference:
   name: 'Feature Extraction: Modern Questions and Challenges'
