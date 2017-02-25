@@ -20,11 +20,21 @@ editor:
   family: Rostamizadeh
 - given: Sanjiv
   family: Kumar
-title: 'Proceedings of the 1st International Workshop on Feature Extraction: Modern
-  Questions and Challenges at NIPS 2015'
-email: ''
-description: 'Proceedings of the 1st International Workshop on Feature Extraction:
-  Modern Questions and Challenges at NIPS 2015, Montreal, Canada'
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of the 1st International Workshop on Feature Extraction: Modern Questions and Challenges at NIPS 2015
+    Held in Montreal, Canada on 11 December 2015
+
+  Published as Volume 44 by the Proceedings of Machine Learning Research on 08 December 2015.
+
+  Volume Edited by:
+    Dmitry Storcheus
+    Afshin Rostamizadeh
+    Sanjiv Kumar
+
+  Series Editors:
+    Neil D. Lawrence
+    Mark Reid
 url: http://proceedings.mlr.press
 baseurl: "/v44"
 twitter_username: mlresearch
@@ -34,6 +44,7 @@ permalink: "/:title.html"
 github:
   edit: true
   repository: v44
+email: ''
 conference:
   name: 'Feature Extraction: Modern Questions and Challenges'
   url: 
