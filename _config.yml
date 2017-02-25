@@ -12,6 +12,8 @@ series: Proceedings of Machine Learning Research
 id: FE-2015
 month: 0
 abstract: ''
+tex_title: 
+title: Proceedings of Machine Learning Research
 sections: 
 editor:
 - given: Dmitry
@@ -20,7 +22,6 @@ editor:
   family: Rostamizadeh
 - given: Sanjiv
   family: Kumar
-title: Proceedings of Machine Learning Research
 description: |
   Proceedings of the 1st International Workshop on Feature Extraction: Modern Questions and Challenges at NIPS 2015
     Held in Montreal, Canada on 11 December 2015

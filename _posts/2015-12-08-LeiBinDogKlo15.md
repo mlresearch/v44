@@ -18,6 +18,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: LeiBinDogKlo15
 month: 0
+tex_title: Theory and Algorithms for the Localized Setting of Learning Kernels
 firstpage: 173
 lastpage: 195
 page: 173-195

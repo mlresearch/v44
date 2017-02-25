@@ -16,6 +16,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: huang15convolutional
 month: 0
+tex_title: Convolutional Dictionary Learning through Tensor Factorization
 firstpage: 116
 lastpage: 129
 page: 116-129

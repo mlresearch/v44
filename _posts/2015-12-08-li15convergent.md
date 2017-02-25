@@ -25,6 +25,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: li15convergent
 month: 0
+tex_title: 'Convergent Learning: Do different neural networks learn the same representations?'
 firstpage: 196
 lastpage: 212
 page: 196-212

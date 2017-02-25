@@ -18,6 +18,8 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: kandemir15jmlr
 month: 0
+tex_title: 'The Deep Feed-Forward Gaussian Process: An Effective Generalization to
+  Covariance Priors'
 firstpage: 145
 lastpage: 159
 page: 145-159

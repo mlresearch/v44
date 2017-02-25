@@ -15,6 +15,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: chen15learning
 month: 0
+tex_title: Learning Multi-channel Deep Feature Representations for Face Recognition
 firstpage: 60
 lastpage: 71
 page: 60-71

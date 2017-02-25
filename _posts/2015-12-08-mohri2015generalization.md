@@ -18,6 +18,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: mohri2015generalization
 month: 0
+tex_title: Generalization Bounds for Supervised Dimensionality Reduction
 firstpage: 226
 lastpage: 241
 page: 226-241

@@ -14,6 +14,7 @@ layout: inproceedings
 series: Proceedings of Machine Learning Research
 id: storcheus2015survey
 month: 0
+tex_title: A Survey of Modern Questions and Challenges in Feature Extraction
 firstpage: 1
 lastpage: 18
 page: 1-18
