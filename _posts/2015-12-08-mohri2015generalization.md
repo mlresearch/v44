@@ -22,7 +22,8 @@ tex_title: Generalization Bounds for Supervised Dimensionality Reduction
 firstpage: 226
 lastpage: 241
 page: 226-241
-sections: 
+order: 226
+cycles: false
 author:
 - given: Mehryar
   family: Mohri

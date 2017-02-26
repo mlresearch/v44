@@ -23,7 +23,8 @@ tex_title: 'The Deep Feed-Forward Gaussian Process: An Effective Generalization 
 firstpage: 145
 lastpage: 159
 page: 145-159
-sections: 
+order: 145
+cycles: false
 author:
 - given: Melih
   family: Kandemir

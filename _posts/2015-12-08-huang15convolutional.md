@@ -20,7 +20,8 @@ tex_title: Convolutional Dictionary Learning through Tensor Factorization
 firstpage: 116
 lastpage: 129
 page: 116-129
-sections: 
+order: 116
+cycles: false
 author:
 - given: Furong
   family: Huang

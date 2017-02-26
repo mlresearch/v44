@@ -19,7 +19,8 @@ tex_title: Learning Multi-channel Deep Feature Representations for Face Recognit
 firstpage: 60
 lastpage: 71
 page: 60-71
-sections: 
+order: 60
+cycles: false
 author:
 - given: Xue-wen
   family: Chen

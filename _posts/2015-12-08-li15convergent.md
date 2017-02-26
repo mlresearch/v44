@@ -29,7 +29,8 @@ tex_title: 'Convergent Learning: Do different neural networks learn the same rep
 firstpage: 196
 lastpage: 212
 page: 196-212
-sections: 
+order: 196
+cycles: false
 author:
 - given: Yixuan
   family: Li

@@ -22,7 +22,8 @@ tex_title: Theory and Algorithms for the Localized Setting of Learning Kernels
 firstpage: 173
 lastpage: 195
 page: 173-195
-sections: 
+order: 173
+cycles: false
 author:
 - given: Yunwen
   family: Lei
