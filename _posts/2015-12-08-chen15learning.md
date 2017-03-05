@@ -3,11 +3,11 @@ title: Learning Multi-channel Deep Feature Representations for Face Recognition
 abstract: "Deep learning provides a natural way to obtain feature representations
   from data without relying on hand-crafted descriptors. In this paper, we propose
   to learn deep feature representations using unsupervised and supervised learning
-  in a cascaded fashion to produce generically descriptive yet class speci\fc features.
+  in a cascaded fashion to produce generically descriptive yet class specific features.
   The proposed method can take full advantage of the availability of large-scale unlabeled
   data and learn discriminative features (supervised) from generic features (unsupervised).
   It is then applied to multiple essential facial regions to obtain multi-channel
-  deep facial representations for face recognition. The effecacy of the proposed feature
+  deep facial representations for face recognition. The efficacy of the proposed feature
   representations is validated on both controlled (i.e., extended Yale- B, Yale, and
   AR) and uncontrolled (PubFig) benchmark face databases. Experimental results show
   its effectiveness."
