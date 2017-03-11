@@ -58,6 +58,7 @@ conference:
   location: Montreal, Canada
   dates:
   - 2015-12-11
+  number: 1
 analytics:
   google:
     tracking_id: UA-92432422-1
