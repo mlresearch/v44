@@ -11,9 +11,6 @@ layout: proceedings
 series: Proceedings of Machine Learning Research
 id: FE-2015
 month: 0
-abstract: ''
-tex_title: 
-title: Proceedings of Machine Learning Research
 cycles: false
 editor:
 - given: Dmitry
@@ -22,6 +19,7 @@ editor:
   family: Rostamizadeh
 - given: Sanjiv
   family: Kumar
+title: Proceedings of Machine Learning Research
 description: |
   Proceedings of the 1st International Workshop on Feature Extraction: Modern Questions and Challenges at NIPS 2015
     Held in Montreal, Canada on 11 December 2015
@@ -39,7 +37,7 @@ description: |
 date_str: 11 Dec
 url: http://proceedings.mlr.press
 baseurl: "/v44"
-twitter_username: mlresearch
+twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
 permalink: "/:title.html"
@@ -51,6 +49,7 @@ display:
     bibtex: true
     endnote: true
     apa: true
+    ris: true
   comments: false
 email: ''
 conference:
@@ -64,3 +63,4 @@ analytics:
     tracking_id: UA-92432422-1
 # Site settings
 # Auto generated from v44.bib
+---
