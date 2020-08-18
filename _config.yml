@@ -1,6 +1,7 @@
 ---
 booktitle: 'Proceedings of the 1st International Workshop on Feature Extraction: Modern
   Questions and Challenges at NIPS 2015'
+orig_bibfile: "/Users/neil/mlresearch/bibtex.bib"
 start: 2015-12-11
 end: 2015-12-11
 published: 2015-12-08
@@ -44,6 +45,10 @@ baseurl: "/v44"
 twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
+exclude:
+- README.md
+- Gemfile
+- ".gitignore"
 style: pmlr
 plugins:
 - jekyll-feed
@@ -72,6 +77,5 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
-orig_bibfile: "/Users/neil/mlresearch/bibtex.bib"
 # Site settings
 # Original source:  /Users/neil/mlresearch/bibtex.bib
